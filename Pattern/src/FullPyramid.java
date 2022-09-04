@@ -1,37 +1,41 @@
-/*  
-          *
-         * *
-        * * *
-       * * * *
-      * * * * *
-     * * * * * *  
-     
-     ************
-     ************
-     ************
-     ************
-     ************
-     ************
-
-*/
-
-
-
+import java.util.Scanner;
 public class FullPyramid {
 
 	public static void main(String[] args) {
-		for (int i = 1; i <= 6; i++) 
+		String choice = "y";
+		String ch1=null;
+		
+		do 
 		{
-			for (int j = 1; j <= 6; j++) 
-				
-				
+			
+		
+			Scanner sc = new Scanner(System.in);
+			
+			System.out.println("Enter the number of row for pyramid: ");
+			int row = sc.nextInt();
+			
+			for(int i=1; i<=row; i++)
 			{
-				System.out.print("  *");
+				for(int j=row-i; j>=1; j--) {
+				System.out.print("  ");
+				}
+				for(int k=1; k<=(2*i-1); k++)  {
+					System.out.print("* ");
+				}
+				System.out.println();	
 			}
-			System.out.println();
-
+			System.out.println("--------------------------------");
+			
+			Scanner sc2 = new Scanner(System.in);
+			
+			System.out.println("Enter y if you wish to continue, otherwise press any key to exit: ");
+			String ch = sc2.next();
+			
+			ch1 = ch;
+		} while(choice.equals(ch1));
+		{
+			System.out.println("-------------End----------------");
 		}
-
 	}
 
 }
