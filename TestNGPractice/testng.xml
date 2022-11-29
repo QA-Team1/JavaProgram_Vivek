@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test thread-count="1" name="BasicTest">
     <classes>
-      <class name="dataDrivenTesting.DataDrivenTestingWithExcel"/>
+      <class name="com.BasicPractice.TestNgBasics"/>
     </classes>  
   </test> <!-- BasicTest -->
 </suite> <!-- Suite -->
